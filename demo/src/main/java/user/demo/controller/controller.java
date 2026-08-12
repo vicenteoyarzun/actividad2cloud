@@ -22,7 +22,6 @@ public class controller {
     }
     @GetMapping("/{id}")
     public ResponseEntity<UserDto> obtenerPorId(@PathVariable Long id) {
-        // Simulación de búsqueda
         UserDto usuario = new UserDto(id, "Usuario " + id, "usuario" + id + "@example.com");
         return ResponseEntity.ok(usuario);
     }
